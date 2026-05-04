@@ -1,13 +1,13 @@
 
 ---
 
-# 🛒 Ecommerce Microservices - Desafio Técnico
+# 🛒 Ecommerce Microservices
 
 Um ecossistema de microserviços em .NET 8, com API Gateway, comunicação assíncrona via RabbitMQ, e Docker Compose.
 
 ---
 
-## 📌 Visão Geral
+## Visão Geral
 
 Este projeto simula a arquitetura de um pequeno ecommerce, dividido em três serviços independentes:
 
@@ -30,16 +30,16 @@ A comunicação assíncrona é feita via RabbitMQ, permitindo troca de eventos e
 
 ---
 
-## 🎯Resultados das Requisições
+## Resultados das Requisições
 
 ![Lista de Produtos](/Images/requisicao.png)
 
 
 ---
 
-## ⚙️ Detalhes da API
+##  Detalhes da API
 
-### **📦 Estoque — `Ecommerce.Estoque`**
+### **Estoque — `Ecommerce.Estoque`**
 
 Gerencia produtos e disponibiliza endpoints de CRUD.
 Arquivos principais:
@@ -49,7 +49,7 @@ Arquivos principais:
 
 ---
 
-### **🧾 Vendas — `Ecommerce.Vendas`**
+### ** Vendas — `Ecommerce.Vendas`**
 
 Criação e listagem de pedidos.
 Principais arquivos:
@@ -59,7 +59,7 @@ Principais arquivos:
 
 ---
 
-### **🚪 Gateway — `Ecommerce.Gateway`**
+### ** Gateway — `Ecommerce.Gateway`**
 
 Roteamento usando **Ocelot**.
 Configurações importantes:
@@ -69,7 +69,7 @@ Configurações importantes:
 
 ---
 
-### **📨 Comunicação Assíncrona (RabbitMQ)**
+### ** Comunicação Assíncrona (RabbitMQ)**
 
 * Produtor e consumidor de eventos entre Vendas e Estoque.
 * Implementação:
